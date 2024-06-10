@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northstar</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Top Navbar with Logo and Search Bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between w-100">
+                <div class="d-flex justify-content-center justify-content-md-start w-100">
+                    <a href="#"><img src="images/logo.jpeg" alt="Logo" class="navbar-logo mr-2 img-fluid"
+                            style="max-height: 60px;"></a>
+                    <a class="navbar-brand text-white text-center text-md-left" href="#"><span
+                            class="font-weight-bolder">NORTH</span>STAR</a>
+                </div>
+                <div class="d-flex justify-content-center justify-content-md-end w-100 mt-2 mt-md-0">
+                    <form class="form-inline position-relative" style="max-width: 300px;">
+                        <input class="form-control pr-5" type="search" placeholder="Search" aria-label="Search"
+                            style="width: 100%;">
+                        <button class="btn position-absolute" type="submit"
+                            style="right: 10px; top: 50%; transform: translateY(-50%); padding: 0; border: none; background: none;">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bottom Navbar with Menu Items -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBottom"
+            aria-controls="navbarBottom" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarBottom">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Careers
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="careersDropdown">
+                        <a class="dropdown-item" href="#">Job Openings</a>
+                        <a class="dropdown-item" href="#">Internships</a>
+                        <a class="dropdown-item" href="#">Career Fairs</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="meetingsDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Meetings & Groups
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="meetingsDropdown">
+                        <a class="dropdown-item" href="#">Conference Rooms</a>
+                        <a class="dropdown-item" href="#">Group Events</a>
+                        <a class="dropdown-item" href="#">Schedule a Meeting</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="promotionsDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Our Promotions
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="promotionsDropdown">
+                        <a class="dropdown-item" href="#">Current Offers</a>
+                        <a class="dropdown-item" href="#">Upcoming Events</a>
+                        <a class="dropdown-item" href="#">Past Events</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="linksDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        My Links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="linksDropdown">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-7 position-relative">
+                <div class="content-header">
+                    <img src="images/header.jpg" alt="Header Image" class="img-fluid">
+                    <div class="overlay-text position-absolute"
+                        style="bottom: 10%; left: 10%; width: 80%; background-color: rgba(27, 18, 18, 0.8); padding: 20px;">
+                        <h5 class="text-white mb-2">It's time to Smile</h5>
+                        <p class="text-white mb-0" style="font-size: 14px;">Dental coverage is now included as part of
+                            all our benefit plans. All plans include free preventive and diagnostic care, including
+                            cleanings, X-rays, and exams.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Sidebar -->
+            <div class="col-md-5 sidebar">
+                <div class="icon-grid">
+                    <a href="#" class="icon">
+                        <i class="fas fa-envelope"></i>
+                        <p>Mail</p>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fas fa-cloud"></i>
+                        <p>OneDrive</p>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fas fa-tasks"></i>
+                        <p>Planner</p>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fas fa-address-book"></i>
+                        <p>Phonebook</p>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fas fa-calendar-alt"></i>
+                        <p>Calendar</p>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fas fa-trophy"></i>
+                        <p>Sales</p>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fas fa-video"></i>
+                        <p>Videos</p>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fas fa-users"></i>
+                        <p>Teams</p>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fas fa-chart-pie"></i>
+                        <p>Metrics</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- News, Announcements, Celebrations, and Chat cards -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header news">News/Announcements</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
+                                <img src="images/news.jpg" alt="News Image" class="img-fluid fixed-image">
+                            </div>
+                            <div class="col-md-8">
+                                <h6 class="card-title font-weight-bold" style="font-size:15px;">Welcome to our new
+                                    Global Services Director</h6>
+                                <p class="card-text" style="font-size:13px;">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nulla convallis libero eget leo vehicula, nec interdum tellus
+                                    lacinia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header chat">Celebrations</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
+                                <img src="images/celebration.jpg" alt="Celebration Image" class="img-fluid fixed-image">
+                            </div>
+                            <div class="col-md-8">
+                                <h6 class="card-title font-weight-bold" style="font-size:15px;">Happy Birthday Carl!
+                                    Wishing you a great day</h6>
+                                <p class="card-text" style="font-size:13px;">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nulla convallis libero eget leo vehicula, nec interdum tellus
+                                    lacinia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header chat">
+                        Chat
+                    </div>
+                    <div class="card-body">
+                        <form action="#" method="post">
+                            <div class="input-group">
+                                <input type="text" class="form-control chat-input" placeholder="Share your thoughts..."
+                                    aria-label="Share your thoughts..." aria-describedby="share-button">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary btn-sm ml-2 mt-2" type="submit"
+                                        id="share-button"
+                                        style="height: 40px; padding-top: 0.25rem; padding-bottom: 0.25rem;">Share</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="col-md-12 mt-3">
+                            <p><span class="font-weight-bold">Harold Katerjian</span> - <small class="text-muted">13
+                                    hours ago</small></p>
+                            <p>WOW. Who knew turtles could weigh in as</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap links -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

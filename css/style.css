@@ -18,6 +18,16 @@ body {
     color: white;
 }
 
+.outlined-text {
+    font-weight: bold;
+    color: white;
+}
+
+.outlined-text::before {
+    content: 'BRANT & ASSOCIATES';
+    -webkit-text-stroke: 1px pink;
+}
+
 .content-header {
     /* background-color: #e8e8e8; */
     padding: 20px;
@@ -93,10 +103,12 @@ body {
     max-width: 100%;
     height: auto;
     max-height: 100px;
-  
+
 }
+
 .form-inline .form-control {
-    width: calc(100% - 40px); /* Adjust width considering the button width */
+    width: calc(100% - 40px);
+    /* Adjust width considering the button width */
 }
 
 .form-inline .btn {
@@ -106,10 +118,12 @@ body {
     padding: 0;
     border: none;
     background: none;
-    width: 40px; /* Adjust to match the search icon size */
+    width: 40px;
+    /* Adjust to match the search icon size */
     height: 100%;
 }
 
 .form-inline .btn i {
-    font-size: 1.2em; /* Adjust the icon size as needed */
+    font-size: 1.2em;
+    /* Adjust the icon size as needed */
 }

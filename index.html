@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRANT & ASSOCIATES</title>
-    <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -26,7 +26,7 @@
         <div class="container-fluid">
             <div class="d-flex flex-column flex-md-row align-items-center justify-content-between w-100">
                 <div class="d-flex justify-content-center justify-content-md-start w-100">
-                    <a href="#"><img src="images/logo.jpeg" alt="Logo" class="navbar-logo mr-2 img-fluid"
+                    <a href="#"><img src="images/logo.jpg" alt="Logo" class="navbar-logo mr-2 img-fluid"
                             style="max-height: 60px;"></a>
                     <a class="navbar-brand text-white text-center text-md-left" href="#"><span
                             class="outlined-text"></span></a>
@@ -104,69 +104,100 @@
         </div>
     </nav>
 
-    <!-- Header -->
+    <!-- Header with Carousel -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-7 position-relative">
-                <div class="content-header">
-                    <img src="images/header.jpg" alt="Header Image" class="img-fluid">
-                    <div class="overlay-text position-absolute"
-                        style="bottom: 10%; left: 10%; width: 80%; background-color: rgba(27, 18, 18, 0.8); padding: 20px;">
-                        <h5 class="text-white mb-2">It's time to Smile</h5>
-                        <p class="text-white mb-0" style="font-size: 14px;">Dental coverage is now included as part of
-                            all our benefit plans. All plans include free preventive and diagnostic care, including
-                            cleanings, X-rays, and exams.</p>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/image1.jpeg" alt="Header Image" class="d-block w-100 carousel-image">
+                            <div class="overlay-text position-absolute"
+                                style="bottom: 10%; left: 10%; width: 80%; background-color: rgba(27, 18, 18, 0.8); padding: 20px;">
+                                <h5 class="text-white mb-2">Embrace Your Success</h5>
+                                <p class="text-white mb-0" style="font-size: 14px;">Empowering your legal journey with
+                                    dedication and expertise, Brant and Associates are your trusted partners in
+                                    achieving success.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/image2.jpeg" alt="Second slide" class="d-block w-100 carousel-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/image3.jpeg" alt="Third slide" class="d-block w-100 carousel-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/image4.jpeg" alt="Fourth slide" class="d-block w-100 carousel-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/image5.jpeg" alt="Fifth slide" class="d-block w-100 carousel-image">
+                        </div>
                     </div>
-                </div>
-            </div>
-
-
-
-            <!-- Sidebar -->
-            <div class="col-md-5 sidebar">
-                <div class="icon-grid">
-                    <a href="#" class="icon">
-                        <i class="fas fa-envelope"></i>
-                        <p>Mail</p>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
                     </a>
-                    <a href="#" class="icon">
-                        <i class="fas fa-cloud"></i>
-                        <p>OneDrive</p>
-                    </a>
-                    <a href="#" class="icon">
-                        <i class="fas fa-tasks"></i>
-                        <p>Planner</p>
-                    </a>
-                    <a href="#" class="icon">
-                        <i class="fas fa-address-book"></i>
-                        <p>Phonebook</p>
-                    </a>
-                    <a href="#" class="icon">
-                        <i class="fas fa-calendar-alt"></i>
-                        <p>Calendar</p>
-                    </a>
-                    <a href="#" class="icon">
-                        <i class="fas fa-trophy"></i>
-                        <p>Sales</p>
-                    </a>
-                    <a href="#" class="icon">
-                        <i class="fas fa-video"></i>
-                        <p>Videos</p>
-                    </a>
-                    <a href="#" class="icon">
-                        <i class="fas fa-users"></i>
-                        <p>Teams</p>
-                    </a>
-                    <a href="#" class="icon">
-                        <i class="fas fa-chart-pie"></i>
-                        <p>Metrics</p>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
                     </a>
                 </div>
             </div>
+      
+
+
+    <!-- Sidebar -->
+    <div class="col-md-5 sidebar">
+        <div class="icon-grid">
+            <a href="#" class="icon">
+                <i class="fas fa-envelope"></i>
+                <p>Mail</p>
+            </a>
+            <a href="#" class="icon">
+                <i class="fas fa-cloud"></i>
+                <p>OneDrive</p>
+            </a>
+            <a href="#" class="icon">
+                <i class="fas fa-tasks"></i>
+                <p>Planner</p>
+            </a>
+            <a href="#" class="icon">
+                <i class="fas fa-address-book"></i>
+                <p>Phonebook</p>
+            </a>
+            <a href="#" class="icon">
+                <i class="fas fa-calendar-alt"></i>
+                <p>Calendar</p>
+            </a>
+            <a href="#" class="icon">
+                <i class="fas fa-trophy"></i>
+                <p>Sales</p>
+            </a>
+            <a href="#" class="icon">
+                <i class="fas fa-video"></i>
+                <p>Videos</p>
+            </a>
+            <a href="#" class="icon">
+                <i class="fas fa-users"></i>
+                <p>Teams</p>
+            </a>
+            <a href="#" class="icon">
+                <i class="fas fa-chart-pie"></i>
+                <p>Metrics</p>
+            </a>
         </div>
     </div>
+    </div>
+    </div>
     <!-- News, Announcements, Celebrations, and Chat cards -->
-    <div class="container-fluid">
+    <div class="container-fluid mt-2">
         <div class="row">
             <div class="col-md-4">
                 <div class="card" id="news-announcements-card">
